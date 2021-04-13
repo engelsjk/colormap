@@ -6,7 +6,7 @@
 
 ## References
 
-The color maps ```inferno```, ```masma```, ```plasma```, ```viridis``` were created by Stéfan van der Walt ([@stefanv](https://github.com/stefanv) and Nathaniel Smith ([@njsmith](https://github.com/njsmith)). More information is available [here](https://bids.github.io/colormap/) and palette data can be found at [BIDS/colormap](https://github.com/BIDS/colormap).
+The color maps ```inferno```, ```masma```, ```plasma```, ```viridis``` were created by Stéfan van der Walt ([@stefanv](https://github.com/stefanv)) and Nathaniel Smith ([@njsmith](https://github.com/njsmith)). More information is available [here](https://bids.github.io/colormap/) and palette data can be found at [BIDS/colormap](https://github.com/BIDS/colormap).
 
 The color maps ```crest```, ```flare```, ```icefire```, ```mako```, ```rocket```, and ```vlag``` were created for the Python statistical data visualization package [```Seaborn```](https://github.com/mwaskom/seaborn). More info on ```Seaborn``` color palettes can be found at their [website](https://seaborn.pydata.org/tutorial/color_palettes.html).
 
