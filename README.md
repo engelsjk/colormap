@@ -12,4 +12,6 @@ The color map ```cividis``` was developed by Jamie R. Nuñez, Christopher R. And
 
 The color map ```turbo``` was developed by Anton Mikhailov ([@antonthefirst](https://github.com/antonthefirst)). More info can be found at the [Google AI Blog](https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html).
 
+The color mapping code found here is a port of a [Python gist](https://gist.github.com/mikhailov-work/ee72ba4191942acecc03fe6da94fc73f) provided by Anton Mikhailov ([@antonthefirst](https://github.com/antonthefirst)).
+
 Original image above courtesy of NASA.
