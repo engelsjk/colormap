@@ -14,19 +14,19 @@ cm := colormap.Colormap{Palette: palette.Magma{}}
 
 size := img.Bounds().Size()
 rect := image.Rect(0, 0, size.X, size.Y)
-tImg := image.NewRGBA(rect)
+newImg := image.NewRGBA(rect)
 
 for y := 0; y < size.Y; y++ {
-    for x := 0; x < size.Y; x++ {
+    for x := 0; x < size.X; x++ {
         grayPixel := img.At(x, y)
         p := color.GrayModel.Convert(grayPixel).(color.Gray).Y
         px := cm.ToRGBA(p, 255)
-        tImg.Set(x, y, px)
+        newImgnewImg.Set(x, y, px)
     }
 }
 
 outputfile, _ := os.Create("magma.png")
-png.Encode(outputfile, tImg)
+png.Encode(outputfile, newImg)
 ```
 
 ## References
