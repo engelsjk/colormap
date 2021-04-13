@@ -14,6 +14,23 @@ import (
 	"github.com/engelsjk/colormap/palette"
 )
 
+func Palettes() []string {
+	return []string{
+		"cividis",
+		"crest",
+		"flare",
+		"icefire",
+		"inferno",
+		"magma",
+		"mako",
+		"plasma",
+		"rocket",
+		"turbo",
+		"viridis",
+		"vlag",
+	}
+}
+
 type Colormap struct {
 	Palette palette.Palette
 }
