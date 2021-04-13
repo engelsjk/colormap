@@ -12,6 +12,6 @@ The color maps ```crest```, ```flare```, ```icefire```, ```mako```, ```rocket```
 
 The color map ```cividis``` was developed by Jamie R. Nuñez, Christopher R. Anderton, and Ryan S. Renslow. More info can be found in their [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0199239).
 
-The color map ```turbo``` was developed by Anton Mikhailov. More info can be found at the [Google AI Blog](https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html).
+The color map ```turbo``` was developed by Anton Mikhailov ([@antonthefirst](https://github.com/antonthefirst)). More info can be found at the [Google AI Blog](https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html).
 
 Image above courtesy of NASA.
