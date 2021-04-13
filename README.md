@@ -2,6 +2,33 @@
 
 ![](images/palettes.png)
 
+## Usage
+
+```Go
+inputFile, _ := os.Open("images/gray8.png")
+defer inputFile.Close()
+
+img, _, _ := image.Decode(inputFile)
+
+cm := colormap.Colormap{Palette: palette.Magma{}}
+
+size := img.Bounds().Size()
+rect := image.Rect(0, 0, size.X, size.Y)
+tImg := image.NewRGBA(rect)
+
+for y := 0; y < size.Y; y++ {
+    for x := 0; x < size.Y; x++ {
+        grayPixel := img.At(x, y)
+        p := color.GrayModel.Convert(grayPixel).(color.Gray).Y
+        px := cm.ToRGBA(p, 255)
+        tImg.Set(x, y, px)
+    }
+}
+
+outputfile, _ := os.Create("magma.png")
+png.Encode(outputfile, tImg)
+```
+
 ## References
 
 The color maps ```inferno```, ```masma```, ```plasma```, ```viridis``` were created by Stéfan van der Walt ([@stefanv](https://github.com/stefanv)) and Nathaniel Smith ([@njsmith](https://github.com/njsmith)). More information is available [here](https://bids.github.io/colormap/) and palette data can be found at [BIDS/colormap](https://github.com/BIDS/colormap).
