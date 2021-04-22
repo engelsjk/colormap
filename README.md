@@ -4,6 +4,9 @@
 
 ## Usage
 
+A Colormap is created by passing it one of the available color palettes. A ToRGBA method then accepts a normalized x value (```float64 [0.0,1.0]```) as well as an alpha value (either ```float64 [0.0,1.0]``` or ```int/uint8 [0,255]```) and returns a new pixel value.
+
+
 ```Go
 inputFile, _ := os.Open("images/gray8.png")
 defer inputFile.Close()
