@@ -24,7 +24,7 @@ for y := 0; y < size.Y; y++ {
         grayPixel := img.At(x, y)
         p := color.GrayModel.Convert(grayPixel).(color.Gray).Y
         px := cm.ToRGBA(p, 255)
-        newImgnewImg.Set(x, y, px)
+        newImg.Set(x, y, px)
     }
 }
 
